@@ -9,6 +9,7 @@ from XMLDataReader import XMLDataReader
 
 
 def get_path_from_arguments(args) -> str:
+    # ggg
     parser = argparse.ArgumentParser()
     group_methods = parser.add_argument_group('method')
     group_methods.add_argument("-p", dest="path", type=str,
