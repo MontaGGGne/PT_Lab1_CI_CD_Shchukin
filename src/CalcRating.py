@@ -1,15 +1,14 @@
 # -*- coding: utf-8 -*-
-from Types import DataType
+import statistics
+from Types import DataType, CalcType
+from ValCalc import ValCalc
 
-RatingType = dict[str, float]
 
-
-class CalcRating:
+class CalcRating(ValCalc):
     def __init__(self, data: DataType) -> None:
-        self.data: DataType = data
-        self.rating: RatingType = {}
+        super().__init__(data)
 
-    def calc(self) -> RatingType:
+    def calc(self) -> CalcType:
         for key in self.data:
             self.rating[key] = 0.0
             for subject in self.data[key]:

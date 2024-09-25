@@ -4,8 +4,10 @@ import sys
 import os
 import pathlib
 from CalcRating import CalcRating
+from CalcQuartiles import CalcQuartiles
 from TextDataReader import TextDataReader
 from XMLDataReader import XMLDataReader
+from YAMLDataReader import YAMLDataReader
 
 
 def get_path_from_arguments(args) -> str:
@@ -29,6 +31,8 @@ def main():
         reader = TextDataReader()
     elif args.type == 'xml':
         reader = XMLDataReader()
+    elif args.type == 'yaml':
+        reader = YAMLDataReader()
     else:
         print("[ERROR] Error -type argument")
         exit(0)
@@ -37,6 +41,8 @@ def main():
     print("Students: ", students)
     rating = CalcRating(students).calc()
     print("Rating: ", rating)
+    quart = CalcQuartiles(students).calc()
+    print("Second quartile: ", quart)
 
 
 if __name__ == "__main__":
