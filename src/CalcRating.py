@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import statistics
 from Types import DataType, CalcType
 from ValCalc import ValCalc
 

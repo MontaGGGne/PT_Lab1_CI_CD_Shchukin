@@ -4,7 +4,7 @@ from src.CalcQuartiles import CalcQuartiles
 import pytest
 
 
-class TestCalcRating:
+class TestCalcQuartiles:
 
     @pytest.fixture()
     def input_data(self) -> tuple[DataType, CalcType]:
@@ -31,7 +31,7 @@ class TestCalcRating:
         }
         return data, rating_scores
 
-    def test_init_calc_rating(self, input_data:
+    def test_init_calc(self, input_data:
                               tuple[DataType, CalcType]) -> None:
         calc_rating = CalcQuartiles(input_data[0])
         assert input_data[0] == calc_rating.data
