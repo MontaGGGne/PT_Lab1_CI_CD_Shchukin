@@ -4,7 +4,35 @@
         <subject name="English" score="85" />
     </student>
     <student name="Jane">
-        <subject name="Math" score="95" />
-        <subject name="English" score="80" />
+        <subject name="Math" score="10" />
+        <subject name="English" score="45" />
+    </student>
+    <student name="Student_1">
+        <subject name="Math" score="40" />
+        <subject name="English" score="65" />
+    </student>
+    <student name="Student_2">
+        <subject name="Math" score="34" />
+        <subject name="English" score="44" />
+    </student>
+    <student name="Student_3">
+        <subject name="Math" score="87" />
+        <subject name="English" score="89" />
+    </student>
+    <student name="Student_4">
+        <subject name="Math" score="43" />
+        <subject name="English" score="56" />
+    </student>
+    <student name="Student_5">
+        <subject name="Math" score="89" />
+        <subject name="English" score="34" />
+    </student>
+    <student name="Student_6">
+        <subject name="Math" score="23" />
+        <subject name="English" score="56" />
+    </student>
+    <student name="Student_7">
+        <subject name="Math" score="97" />
+        <subject name="English" score="67" />
     </student>
 </students>
